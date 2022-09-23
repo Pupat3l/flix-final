@@ -164,32 +164,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6N-xz-lNH">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P6N-xz-lNH">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GEp-h5-l7v">
-                                    <size key="itemSize" width="128" height="173"/>
+                                    <size key="itemSize" width="163" height="199"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="c5N-Db-du1" customClass="MovieGridCell" customModule="flix_p1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="173"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="199"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0MA-6y-DWe" customClass="movieGridCell" customModule="flix_p1" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="173"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="163" height="199"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tyT-ZU-F4K">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="173"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tyT-ZU-F4K">
+                                                    <rect key="frame" x="0.0" y="0.0" width="163" height="199"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" name="AccentColor"/>
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="128" height="173"/>
+                                        <size key="customSize" width="163" height="199"/>
                                         <connections>
                                             <outlet property="posterView" destination="tyT-ZU-F4K" id="hyA-R0-GMj"/>
                                         </connections>
@@ -199,6 +198,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hBH-Bx-IcR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P6N-xz-lNH" secondAttribute="bottom" id="4tv-Qq-vat"/>
+                            <constraint firstItem="P6N-xz-lNH" firstAttribute="leading" secondItem="hBH-Bx-IcR" secondAttribute="leading" id="BHn-4S-pY5"/>
+                            <constraint firstItem="P6N-xz-lNH" firstAttribute="top" secondItem="4S1-HJ-4xe" secondAttribute="top" id="X1q-7B-6Dk"/>
+                            <constraint firstItem="P6N-xz-lNH" firstAttribute="trailing" secondItem="hBH-Bx-IcR" secondAttribute="trailing" id="xCx-k9-asi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Superhero" id="1Vy-MI-0ob"/>
                     <connections>
